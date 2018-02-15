@@ -5,7 +5,6 @@ def get_roots(a, b, c):
     if discriminant < 0:
         return None, None
     elif discriminant == 0:
-        return ((-b - sqrt(discriminant)) / (2 * a), None)
+        return (-b - sqrt(discriminant)) / (2 * a), None
     else:
-        return ((-b - sqrt(discriminant)) / (2 * a),
-                (-b + sqrt(discriminant)) / (2 * a))
+        return (-b - sqrt(discriminant)) / (2 * a), (-b + sqrt(discriminant)) / (2 * a)
