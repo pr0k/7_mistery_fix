@@ -1,6 +1,6 @@
 from math import sqrt
 
-def root(a,b,dis):
+def root(a, b, dis):
     return (-b + dis) / (2 * a)
 
 def get_roots(a, b, c):
@@ -11,5 +11,3 @@ def get_roots(a, b, c):
         return root(a, b, -sqrt(discriminant)), None
     else:
         return root(a, b, -sqrt(discriminant)), root(a, b, sqrt(discriminant))
-
-print(get_roots(1, 2, -3))
